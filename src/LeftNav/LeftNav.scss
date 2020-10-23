@@ -1,0 +1,28 @@
+.left-container {
+  border: 1px solid black;
+  height: 80vh;
+}
+.up-container {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.bottom-container {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.button {
+  height: 5em;
+  border: 1Px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

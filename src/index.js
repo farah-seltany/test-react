@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import TopNav from "./TopNav/TopNav";
+import LeftNav from "./LeftNav/LeftNav";
+import MainApp from "./MainApp/MainApp";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TopNav/>
+    <LeftNav/>
+    <MainApp/>
   </React.StrictMode>,
   document.getElementById('root')
 );
