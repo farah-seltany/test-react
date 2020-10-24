@@ -1,11 +1,11 @@
 import React, { createContext, useState } from "react";
 
-export const PatientContext = createContext(undefined);
+export const PatientContext = createContext({});
 
 export const PatientProvider = ({ children }) => {
-    const [firstName, setFirstName] = useState(undefined);
-    const [lastName, setLastName] = useState(undefined);
-    const [sex, setSex] = useState(undefined);
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [sex, setSex] = useState('');
 
     return (
         <PatientContext.Provider

@@ -1,9 +1,9 @@
 .left-container {
-  border: 1px solid black;
-  height: 80vh;
+  border-right: 1Px solid grey;
+  height: 50em;
 }
 .up-container {
-  height: 50vh;
+  height: 30em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -11,7 +11,7 @@
   padding-bottom: 2em;
 }
 .bottom-container {
-  height: 30vh;
+  height: 20em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -21,14 +21,18 @@
 
 .button {
   height: 5em;
-  border: 1Px solid red;
+  background-color: aliceblue;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: .5em;
 }
-
+a:hover {
+  text-decoration: none;
+  background-color: cadetblue;
+  color: white;
+}
 .switch-container {
-  border: 1px solid yellow;
-  height: 80vh;
+  height: 50em;
   padding: 1em;
 }

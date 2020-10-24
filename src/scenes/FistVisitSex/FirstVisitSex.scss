@@ -1,0 +1,35 @@
+form {
+  label {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  img {
+    width: 6em!important;
+  }
+  input[type=radio] {
+    visibility: hidden;
+  }
+  input:checked + img {
+    filter: invert(68%) sepia(30%) saturate(491%) hue-rotate(133deg) brightness(81%) contrast(81%);
+  }
+}
+.sex-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  img {
+    width: 3em;
+  }
+  .next {
+    cursor: not-allowed;
+    &.active {
+      cursor: pointer;
+    }
+  }
+  .previous {
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+}
