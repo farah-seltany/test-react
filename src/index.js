@@ -2,15 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import TopNav from "./TopNav/TopNav";
-import LeftNav from "./LeftNav/LeftNav";
-import MainApp from "./MainApp/MainApp";
+import TopNav from "./components/TopNav/TopNav";
+import LeftNav from "./components/LeftNav/LeftNav";
+import {PatientProvider} from "./patientContext";
+import {WaintingsProvider} from "./waintingsContext";
 
 ReactDOM.render(
   <React.StrictMode>
-    <TopNav/>
-    <LeftNav/>
-    <MainApp/>
+      <PatientProvider>
+          <WaintingsProvider>
+              <TopNav/>
+              <LeftNav/>
+          </WaintingsProvider>
+      </PatientProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

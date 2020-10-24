@@ -2,7 +2,7 @@ import React from "react";
 import './TopNav.scss'
 import ReactIcon from './react-icon.png'
 
-function TopNav() {
+const TopNav = () => {
     return (
         <div className={'container col-xs-12'}>
             <div className={'row'}>

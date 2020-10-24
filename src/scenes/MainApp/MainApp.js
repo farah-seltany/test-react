@@ -1,10 +1,10 @@
 import React from "react";
 import './MainApp.scss'
 
-function MainApp () {
+const MainApp = () => {
     return (
         <div className={'main-container col-xs-10'}>
-            <p>test</p>
+            <p>Accueil</p>
         </div>
     )
 }
