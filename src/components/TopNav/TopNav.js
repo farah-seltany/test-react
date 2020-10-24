@@ -10,7 +10,7 @@ const TopNav = () => {
                     <img src={ReactIcon} alt={'logo'}/>
                 </div>
                 <div className={'name-container col-xs-2 col-xs-offset-8'}>
-                    <div className={'name'}>Farah SELTANY</div>
+                    <div className={'name'}>Médecin : <b>Farah SELTANY</b></div>
                 </div>
             </div>
         </div>
