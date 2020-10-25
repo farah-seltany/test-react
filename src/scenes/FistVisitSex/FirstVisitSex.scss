@@ -21,8 +21,7 @@ form {
   margin-top: 2em;
   img {
     width: 3em;
-  }
-  .next {
+    margin-top: 4em;
     cursor: not-allowed;
     &.active {
       cursor: pointer;

@@ -5,15 +5,15 @@ import * as serviceWorker from './serviceWorker';
 import TopNav from "./components/TopNav/TopNav";
 import LeftNav from "./components/LeftNav/LeftNav";
 import {PatientProvider} from "./patientContext";
-import {WaintingsProvider} from "./waintingsContext";
+import {RegisteredProvider} from "./scenes/RegisteredPatients/RegisteredContext";
 
 ReactDOM.render(
   <React.StrictMode>
       <PatientProvider>
-          <WaintingsProvider>
+          <RegisteredProvider>
               <TopNav/>
               <LeftNav/>
-          </WaintingsProvider>
+          </RegisteredProvider>
       </PatientProvider>
   </React.StrictMode>,
   document.getElementById('root')

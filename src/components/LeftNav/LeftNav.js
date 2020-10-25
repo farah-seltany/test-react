@@ -6,6 +6,8 @@ import FirstVisit from "../../scenes/FirstVisitName/FirstVisit";
 import FirstVisitSex from "../../scenes/FistVisitSex/FirstVisitSex";
 import PatientInfos from "../../scenes/PatientInfos/PatientInfos";
 import {PatientContext} from "../../patientContext"
+import WaitingsPatient from "../../scenes/WaitingsPatients/WaitingsPatients";
+import RegisteredPatients from "../../scenes/RegisteredPatients/RegisteredPatients";
 
 const LeftNav = () => {
     const user = useContext(PatientContext)
@@ -17,13 +19,13 @@ const LeftNav = () => {
                             <p>Accueil</p>
                         </Link>
                         <Link to={'/first-visit'} className={'button'}>
-                            <p>Identité du patient</p>
+                            <p>1ère visite</p>
                         </Link>
-                        <Link to={'/'} className={'button'}>
+                        <Link to={'/waitings'} className={'button'}>
                             <p>Patients en attente</p>
                         </Link>
-                        <Link to={'patient-infos'} className={'button'}>
-                            <p>Informations patient</p>
+                        <Link to={'registered'} className={'button'}>
+                            <p>Patients enregistrés</p>
                         </Link>
                 </div>
                 <div className={'bottom-container col-xs-12'}>
@@ -44,6 +46,10 @@ const LeftNav = () => {
                     <Route path='/first-visit-sex' component={FirstVisitSex}>
                     </Route>
                     <Route path='/patient-infos' component={PatientInfos}>
+                    </Route>
+                    <Route path='/waitings' component={WaitingsPatient}>
+                    </Route>
+                    <Route path='/registered' component={RegisteredPatients}>
                     </Route>
                 </Switch>
             </div>

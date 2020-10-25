@@ -10,8 +10,13 @@ import woman from '../../icons/woman.svg'
 const FirstVisitSex = () => {
     const user = useContext(PatientContext)
     const history = useHistory()
+    if (!user.firstName || !user.lastName) {
+        previousForm()
+    }
     function nextForm() {
-        history.push('patient-infos')
+        if (user.sex) {
+            history.push('patient-infos')
+        }
     }
     function previousForm() {
         history.push('first-visit')
@@ -33,7 +38,7 @@ const FirstVisitSex = () => {
             </form>
             <div className={'sex-buttons-container col-xs-2'}>
                 <img className={'previous'} src={previous} alt={'previous arrow'} onClick={previousForm}/>
-                <img className={'next'} src={next} alt={'next arrow'} onClick={nextForm}/>
+                <img className={`${user.sex ? "active" : "inactive"}`} src={next} alt={'next arrow'} onClick={nextForm}/>
             </div>
         </div>
     )
